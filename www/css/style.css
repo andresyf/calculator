@@ -1,0 +1,85 @@
+
+html[data-theme="dark"]{
+    --clr-background: #222;
+    --clr-primary: rgb(243, 130, 54);
+    --clr-secondary: #2ec1ac;
+    --primary-shadow: -4px -4px 12px rgba(255, 255, 255, 0.5),
+                      4px 4px 12px rgba(0,0,0,0.5);
+    --secondary-shadow: -3px -3px -3px rgba(255,255,255,0.5),
+                        3px 3px 5px rgba(0,0,0,0.5);
+    --inset-shadow: inset -10px -10px 15px rgba(255,255,255,0.5),
+                        inset 10px 10px 25px rgba(0,0,0,0.5);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-background);
+    font-family: "Century Gothic";
+}
+
+.calculadora{
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: var(--primary-shadow);
+    width: 315px;
+    height: 500px;
+    border-radius: 30px;
+}
+
+.calculadora td{
+    padding: 3px;
+    color: var(--clr-secondary);
+    text-decoration: none;
+}
+
+.calculadora td button{
+    display: block;
+    width: 60px;
+    height: 50px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    color: var(--clr-primary);
+    box-shadow: var(--clr-secondary);
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.calculadora td button:active{
+     box-shadow: var(--inset-shadow);
+}
+
+.calculadora caption{
+    font-size: 10px;
+    color: var(--clr-primary);
+    text-align: right;
+    margin-bottom: 8px;
+    margin-right: 20px;
+}
+
+#igual{
+    height: 110px;
+}
+
+#cero{
+    margin-left: 70px;
+}
+
+#resultado{
+    display: block;
+    text-align: left;
+    margin-top: 3px;
+    font-size: 40px;
+    color: var(--clr-primary);
+    margin-bottom: 30px;
+    width: 250px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
